@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black n White Clothing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Black n White</h1>
+            <p>Clothing</p>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="products.html" class="nav-link">Products</a>
+            <div class="nav-icons">
+                <button class="search-btn">
+                    <span class="search-icon">🔍</span>
+                </button>
+                <a href="cart.html" class="cart-btn">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main class="hero">
+        <h2>Wear your style<br>with comfort</h2>
+        <div class="carousel">
+            <div class="product-container">
+                <img src="images/tshirt1.png" class="product left" alt="Elite Hoodie">
+                <img src="images/tshirt2.png" class="product center active" alt="Elite T-Shirt">
+                <img src="images/tshirt3.png" class="product right" alt="Black T-shirt">
+            </div>
+            <div class="carousel-controls">
+                <button class="control-btn prev">&lt;</button>
+                <button class="control-btn next">&gt;</button>
+            </div>
+        </div>
+        <div class="background-text"></div>
+    </main>
+    <div class="product-popup" id="productPopup">
+        <div class="popup-content">
+            <div class="popup-left">
+                <h1>ELITE T-SHIRT</h1>
+                <p class="price">GHS90.00</p>
+                <p class="description">Experience ultimate comfort with our premium Elite Hoodie. Made from high-quality cotton blend, featuring a modern fit, adjustable hood, and convenient front pocket. Perfect for both casual wear and active lifestyle.</p>
+                <div class="color-options">
+                    <span class="color-dot black active"></span>
+                    <span class="color-dot white"></span>
+                    <span class="color-dot gray"></span>
+                </div>
+                <div class="size-options">
+                    <button class="size-btn">S</button>
+                    <button class="size-btn">M</button>
+                    <button class="size-btn">L</button>
+                    <button class="size-btn">XL</button>
+                </div>
+                <button class="buy-now-btn">Buy now</button>
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            <div class="popup-right">
+                <img src="images/tshirt1.png" alt="Elite Hoodie">
+            </div>
+        </div>
+    </div>
+    <div class="search-overlay">
+        <div class="search-container">
+            <input type="text" placeholder="Search products..." class="search-input">
+            <button class="close-search">×</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
